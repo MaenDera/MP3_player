@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="audio-container">
+        <audio id="custom-audio" controls>
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <input type="file" id="audio-file-input" accept=".mp3" webkitdirectory multiple>
+        <br><br><br><br>
+        <div class="player-container">
+            <p>The playlist will automatically start playing</p>
+            <div class="custom-controls">
+                <button id="previous">Previous</button>
+                <button id="play-pause">Play</button>
+                <button id="next">Next</button>
+                <button id="loop">Loop</button>
+            </div>
+            <br> <span id="current-song">No MP3 playing</span>
+            <div class="custom-controls">
+                <input type="range" id="seek-bar" value="0">
+                <span id="current-time">0:00</span>-<span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+    <ul id="audio-list"></ul>
+    <script src="audio_player.js"></script>
+</body>
+</html>

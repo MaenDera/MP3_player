@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717 ;
+    color: wheat;
+}
+p {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+audio {
+    display: none;
+}
+
+/* Apply a shadow effect to the player container */
+.player-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+/* Style the list items to look like clickable links */
+ul#audio-list li {
+    cursor: pointer;
+    color: #3498db;
+    /* text-decoration: underline; */
+}
+
+ul#audio-list li:hover {
+    color: #4ab2f8;
+    text-decoration: none;
+}
+
+.custom-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Custom audio player styles */
+.audio-container {
+    text-align: center;
+    padding: 20px;
+}
+
+button#play-pause {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input#seek-bar {
+    width: 100%;
+}
+
+span#current-time,
+span#duration {
+    margin: 0 10px;
+}
